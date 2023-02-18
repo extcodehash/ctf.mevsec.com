@@ -1,5 +1,5 @@
 pragma solidity ^0.8.0;
-import "@openzeppelin/contracts/token/ERC721/ERC721.sol";
+import "openzeppelin-contracts/contracts/token/ERC721/ERC721.sol";
 //Created by @mis4nthr0pic
 contract ImpossibleNFT is ERC721 {
     // Only hackers can mint the ImpossibleNFT, Are you a hacker?

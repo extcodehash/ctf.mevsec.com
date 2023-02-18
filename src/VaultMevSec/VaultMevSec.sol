@@ -19,7 +19,7 @@ contract VaultMevSec {
     }
 
     function withdraw(address payable beneficiary) public onlyOwner {
-        require(msg.sender != tx.origin);
+        require(msg.sender != tx.origin, "dah");
         beneficiary.transfer(address(this).balance);
     }
 
