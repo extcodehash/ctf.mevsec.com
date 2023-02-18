@@ -12,7 +12,7 @@ contract VaultMevSecTest is Test {
         vault = (new VaultMevSec){value: 100 ether}();
     }
 
-    function exploitVaultMevSec() public {
+    function testVaultMevSec() public {
         vm.startPrank(attacker);
         Attacker a = new Attacker(address(vault));
         vm.stopPrank();
